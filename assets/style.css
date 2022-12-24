@@ -1,0 +1,155 @@
+*{box-sizing: border-box;}
+body{font-size : 16px;
+    background-color:  hsl(217, 100%, 97%);
+}
+.container{
+height: 100%;
+
+
+position: relative;
+}
+header{
+height: 150px;
+background-image:url("./images/bg-sidebar-mobile.svg");
+width: 100%;
+margin: 0;
+position: relative;
+
+}
+.main{
+background-color: hsl(0, 0%, 100%);
+height: 70%;
+width: 87%;
+border-radius: 1em;
+position: absolute;
+top: 60px;
+margin: 3%;
+margin-right: 0;
+padding: 1%;
+float: left;
+
+}
+.aside{
+height: 100%;
+width: 20%;
+background-image:url("./images/bg-sidebar-desktop.svg");
+float: left;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+
+}
+.leftside{
+width: 80%;
+height: 100%;
+position: relative;
+float: left;
+}
+.content{
+width: 100%;float: left;height: 80%;
+position: absolute;
+top:3%;
+
+}
+
+
+footer #cfooter{
+height: 20%;
+background-color:hsl(231, 100%, 99%);
+position: fixed;
+bottom: 0;
+left: 0;right: 0;
+float: left;
+}
+
+footer .btn{
+font-weight: 600;
+font-size: 0.7em;
+position: fixed;
+bottom:2%;
+
+
+}
+#cfooter{position: absolute;
+bottom:2%;width: 100%;}
+
+#f2 .btn{
+font-weight: 700;
+font-size: 1em;
+position: absolute;
+bottom:20%;
+}
+.gobackBtn{
+background-color: transparent;
+color:hsl(231, 11%, 63%);
+left: 5%;
+
+
+
+}
+.nextStepBtn,.nextStepBtn:hover{
+background-color: hsl(213, 96%, 18%);
+color:white;
+right: 5%;
+
+
+}
+
+.nav{
+position: absolute;
+top: 20px;
+margin-left: 20%;
+width: 80%;
+
+
+}
+.nav li{
+    padding-left: 0;
+    padding-right: 0;
+    width: 17%;
+}
+.nav table tr{color:white;   
+   }
+
+.step{
+font-size:0.8em;
+}
+.navtext{
+font-weight: 700;
+}
+.nav .btn{
+color: hsl(0, 0%, 100%);
+background-color: transparent;
+border-radius: 60%;
+border:1px hsl(0, 0%, 100%) solid;
+
+margin: 5%;
+}
+.activebtn{
+background-color: hsl(206, 94%, 87%);
+color:black;
+}
+#nav2{display: inline;}
+
+@media only screen and (min-width: 376px) {
+header{display: none;}
+.aside .nav{display: flow-root; margin: 2%; width: 60%; font-size: 80%;}
+#f{display: none;}
+.nav li{width: 100%;}
+
+
+}
+@media only screen and (max-width: 376px) {
+.aside{display: none;}
+#f2{display: none;}
+.step,.navtext{display: none;}
+#nav2.nav{display: inline-block;left:15%}
+
+
+
+
+
+
+
+
+}
